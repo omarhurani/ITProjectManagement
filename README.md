@@ -1,13 +1,13 @@
 # IT Project Management Calculator
-This is a command-line program to solve project management problems easily
+This is a console program to solve project management problems easily.
 
 ###### Disclaimer
 I'm not resposible for any incorrect output :3 I think it is logically correct and I tested it on a bunch of examples.
 
 ## Input Format
-1. Number of tasks
-2. Name and duration pairs of the tasks
-3. Number of predecessors + list of predecessors, in the same order the tasks where entered
+1. Number of tasks.
+2. Name and duration pairs of the tasks.
+3. Number of predecessors + list of predecessors, in the same order the tasks where entered.
 
 #### Example
 ```
@@ -20,22 +20,22 @@ A 3 B 4 C 2 D 3 E 1
 1 B
 ```
 This input represents 5 tasks:
-- **A**, duration of 3, 0 predecessors
-- **B**, duration of 4, 0 predecessors
-- **C**, duration of 2, 1 predecessor, **A**
-- **D**, duration of 3, 2 predecessors, **A** and **B**
-- **E**, duration of 1, 1 predecessor, **B**
+- **A**, duration of 3, 0 predecessors.
+- **B**, duration of 4, 0 predecessors.
+- **C**, duration of 2, 1 predecessor, **A**.
+- **D**, duration of 3, 2 predecessors, **A** and **B**.
+- **E**, duration of 1, 1 predecessor, **B**.
 
 ## Output Format
 The output comes as a line for each task, with each line containing:
-- Name
-- Duration
-- Early Start
-- Early Finish
-- Late Start
-- Late Finish
-- Total Slack Time
-- Free Slack Time
+- Name.
+- Duration.
+- Early Start.
+- Early Finish.
+- Late Start.
+- Late Finish.
+- Total Slack Time.
+- Free Slack Time.
 If the line has a `*`, this indicates a critical task.
 
 #### Example
